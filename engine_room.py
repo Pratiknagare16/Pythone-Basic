@@ -933,3 +933,54 @@ class Toy:
             print(f"{self.name} is used. Durability now: {self.durability}%")
         else:
             print(f"{self.name} is broken!")
+
+
+#use of lab 
+
+
+import math
+
+print(math.sqrt(4))
+
+
+from math import sqrt
+print(sqrt(4))
+
+
+print(math.pi)
+
+print(math.log10(100))
+
+
+print(math.sqrt(60))
+
+
+print(print(math.sin(math.radians(90))))
+
+
+
+from datetime import date
+
+
+print(date.today())
+
+
+
+today = date.today()
+print(today)
+
+
+
+print(today.day, today.month, today.year)   
+
+
+
+
+from datetime import datetime
+
+
+print(datetime.now())   
+
+print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))      
+
+
