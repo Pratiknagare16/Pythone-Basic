@@ -546,3 +546,114 @@ if x > 10:
     print("and also above 20!")
   else:
     print("but not above 20.")
+
+
+
+
+
+
+# for LOOP
+
+
+team_member = ['Pratik', 'Prathmesh', 'Vedant', 'devang','Shankul']
+
+for members in team_member:
+    print(members)
+
+
+
+
+Name = 'Pratik Nagare'
+for i in Name:
+  print(i)
+
+
+
+
+team_detail = {'name': 'GESCOE CODERS', 'Leader':'PANDE', 'Totol Members': 5, }
+
+for item in team_detail:
+    print(item, team_detail[item])
+
+
+print('Loop for the count upto the 9')
+for i in range(10):  
+  print(i)
+
+print('Loop for the print 0 t0 99')
+
+for i in range(1,100):   
+  print(i)
+
+
+
+print("------ For the Continue ------- ")
+
+adress = ['Nashik','Mumbai','Kolkata','Delhi','Karnataka','Pune','kedarnath','Kashmeer']
+
+for location in adress:
+    if location == 'Pune':
+        continue
+    print(location)
+
+
+print("--------For the Break-------")
+
+adress = ['Nashik','Mumbai','Kolkata','Delhi','Karnataka','Pune','kedarnath','Kashmeer']
+
+for location in adress:
+    if location == 'Pune':
+        break 
+    print(location)
+
+
+
+
+# Squ of Number
+
+num = [1, 2, 3, 4, 5, 6, 7 , 8 ,9 , 10]
+
+def sqr(item):
+  return item * item
+
+for i in num:
+  print(i, sqr(i))
+
+
+
+
+  # mutiplication table by input
+
+
+num = int(input("Enter the number "))  
+for i in range(1,11):  
+    c = num * i  
+    print(f"{num} x {i} '    |    ' {c}")   
+
+
+
+Subject  = ["math", "Coding", "Phy"] 
+time = ["10 to 12 ", "12 to 2 ", "3 to 5"] 
+
+for x in Subject:
+  for y in time:
+    print(x, y)
+
+
+
+
+
+A = int(input("Enter the RollNO "))
+
+nums = [1, 23, 32, 34, 36, 67, 69, 89, 99]  
+count = 0;  
+for item in nums:  
+    count = count + 1
+    if item == A :  
+        print("Roll NO matched")  
+        break
+print("found at", count, "location")
+
+
+
+
