@@ -722,3 +722,214 @@ while i < len(str2):
         break  
     print('Current Letter :', str2[i])   
     i += 1 
+
+#   Classes
+
+
+class Employee:            
+    name = "John"          
+    age = 26    
+
+emp = Employee()
+type(emp)     
+
+print(emp.name)    
+print(emp.age)
+
+
+
+
+class Student :
+    name = "Pratik"
+    age = 21
+    Education = " b tech "
+    RollNo = 564
+    Skill = "WebSite Devlopment"
+
+stu = Student()
+
+print(stu.name)
+print(stu.age)
+print(stu.Education)
+print(stu.RollNo)
+print(stu.Skill)
+
+class team :
+    Name_of_team = "Code Guru"
+    Batch_No = 13
+    time_of_Work = "10 to 1"
+
+t = team()
+
+print(t.Name_of_team)
+print(t.Batch_No)
+print(t.time_of_Work)
+
+
+
+class Employee:            
+    name = "Sana"          
+    age = 26
+    def hello(self):        
+      print("Hello")
+
+emp = Employee()           
+emp.hello()      
+
+
+class NOkari :
+    name =" Devloper "
+    age = 20
+    def work(self):
+      print("Ready")
+
+start = NOkari()
+start.work()        
+
+class Car_Finder :
+    Name ="Maruti Shizuki"
+    traval = "234 km"
+    color = "red"
+
+    def Sure(self):
+      print("Mil gayi Car")
+
+art = Car_Finder()
+art.Sure()        
+
+class Employee:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    
+    def details(self):
+        print("Employee Name: ",  self.name)
+        print("Employee Age: ", self.age)
+ 
+
+emp1 = Employee("John", 26)
+emp2 = Employee("Jane", 24)
+
+emp1.details()
+emp2.details()
+
+class Students:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    
+    def Info(self):
+        print("Student Name: ",  self.name)
+        print("Student Age: ", self.age)
+ 
+
+emp1 = Students("John", 26)
+emp2 = Students("Jane", 24)
+
+emp1.Info()
+emp2.Info()
+
+
+
+class Student:
+    def __init__(self, name):
+        self.name = name        
+
+    def intro(self):
+        print('Hi I am', self.name)
+
+    def change_name(self, name):
+        self.name = name
+
+john = Student('john')
+
+# access method
+john.intro()
+
+# access attribute
+print(john.name)
+
+# change name
+john.change_name('JJOOHHNN')
+john.intro()
+
+
+
+class Rectangle:
+    def __init__(self, length, width ):
+        self.length = length
+        self.width = width
+    def area(self):
+        print(f"Length - {self.length}, Width - {self.width}")
+        return self.length * self.width
+
+first = Rectangle(5,2)
+print(first.area())
+
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        print(f"Radius - {self.radius}")
+        return 3.1416 * self.radius * self.radius
+
+
+c1 = Circle(7)
+print(c1.area())
+
+
+
+class Triangle:
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+
+    def area(self):
+        print(f"Base - {self.base}, Height - {self.height}")
+        return 0.5 * self.base * self.height
+
+
+t1 = Triangle(10, 5)
+print(t1.area())
+
+
+
+
+
+class Dog:
+  def __init__(self, breed, age, color):
+    self.breed = breed
+    self.age = age
+    self.color = color
+  def details(self):
+    print(f"Breed - {self.breed}, Age - {self.age}, Color - {self.age} ")
+
+dog1 = Dog('Husky', 5, 'Blank')
+
+dog1.details()
+
+
+
+class Toy:
+    def __init__(self, name, type, sound, durability):
+        self.name = name
+        self.type = type
+        self.sound = sound
+        self.durability = durability  
+
+    def show(self):
+        return f"{self.name} ({self.type}) - Durability: {self.durability}%"
+
+    def make_sound(self):
+        print(f"{self.name} makes sound: {self.sound}")
+
+    def use(self):
+        if self.durability > 0:
+            self.durability -= 10
+            print(f"{self.name} is used. Durability now: {self.durability}%")
+        else:
+            print(f"{self.name} is broken!")
