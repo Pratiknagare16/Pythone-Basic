@@ -343,3 +343,133 @@ print(set3)
 
 set4 = {"355","Pratik", True, 20, "Superman"}
 print(set4)
+
+#function 
+
+def hello():                    
+    print('hello world')
+
+hello()              # calling the hello function
+hello()                  # reuseable
+
+def hello (name):
+   print(f'hello {name}')
+
+
+hello('John')
+hello(12)
+
+
+
+def StudentInfo (details):
+   print(f'hello{details}')
+
+hello("Pratik Nagare")
+hello(11)
+hello('B')
+hello("Computer Engineering")
+print(type(hello))
+
+def addthis(first, second):
+  print(first + second)
+
+print("Addition of 12 and 13")
+
+addthis(12, 13) 
+
+
+def subthis(first, second):
+   print(first - second)
+
+print("substraction of 12 and 13")
+
+subthis(12, 13) 
+
+def multiplication(first , second):
+   print(first * second)   
+
+print("Multiplication of 12 and 13")
+multiplication(12, 13) 
+
+def division(first , second):
+   print(first / second)   
+
+print("division of 12 and 13")
+division(12, 13) 
+
+
+
+def hello_you(name):
+    return (f'hello {name.upper()}')
+print(hello_you('Students'))
+
+def add():  
+    a = 35 
+    b = 56  
+    c = a+b  
+    return c  
+
+print("The sum is:", add())
+
+
+
+'''
+
+# calculator using input
+
+def add(a,b):  
+    return a+b; 
+print("Enter the Numbers For the Addition")
+a = int(input("Enter a: "))    
+b = int(input("Enter b: "))    
+    
+print("Sum = ",add(a,b)) 
+
+
+def sub(a,b):  
+    return a-b; 
+print("Enter the Numbers For the Substraction")
+a = int(input("Enter a: "))   
+b = int(input("Enter b: "))    
+    
+print("Substraction = ",sub(a,b)) 
+
+
+def div(a,b):  
+    return a/b; 
+print("Enter the Numbers For the division")
+a = int(input("Enter a: "))   
+b = int(input("Enter b: "))    
+    
+print("division = ",div(a,b)) 
+
+
+def Multi(a,b):  
+    return a*b; 
+
+
+print("Enter the Numbers For the Multiplication")
+a = int(input("Enter a: "))    # will give error if you pass string here
+b = int(input("Enter b: "))    
+    
+print("Multi = ",Multi(a,b)) 
+
+
+'''
+
+
+# interest rate  finding
+ 
+
+
+print("Calculation for the interest rate")
+
+p = int(input("Enter the principle amount? "))    
+r = float(input("Enter the rate of interest? "))   
+t = int(input("Enter the time in years? "))
+
+def simple_interest(p,t,r):    
+    return (p*t*r)/100    
+
+  
+print("Simple Interest: ",simple_interest(p,r,t)) 
