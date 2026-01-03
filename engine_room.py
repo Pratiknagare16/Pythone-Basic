@@ -655,5 +655,70 @@ for item in nums:
 print("found at", count, "location")
 
 
+#while loop
+print("For the X")
+
+x = 1
+while x < 5:       
+    print(x)
+    x += 1      
+
+print("For the Y")
+
+y = 5
+while y < 15:
+    print(y)
+    y += 1
 
 
+print("for the X again with Break")
+
+x = 1
+while x < 10:
+    if x == 4:
+        break
+    print(x)
+    x += 1
+
+print("for the Y again with break")
+
+y = 5
+while y < 15:
+    if y == 9:
+        break
+    print(y)
+    y += 1
+
+
+
+while True:
+    name = input('Input name: ')
+    if name == 'stop':
+        break
+    elif name =='':
+        break
+    print("Your name is:", name)
+
+
+
+
+i = 0  
+str1 = 'One Piece Is related To Treasure'  
+  
+while i < len(str1):   
+    if str1[i] == 't':   
+        i += 1  
+        break  
+    print('Current Letter :', str1[i])   
+    i += 1 
+
+
+i = 0  
+str2 = 'Ham saat saat hai is old film'  
+  
+while i < len(str2):   
+    if str2[i] == 'o':   
+        i += 1  
+        break  
+    print('Current Letter :', str2[i])   
+    i += 1 
