@@ -413,7 +413,12 @@ print("The sum is:", add())
 
 
 
-'''
+
+
+
+
+
+
 
 # calculator using input
 
@@ -455,7 +460,6 @@ b = int(input("Enter b: "))
 print("Multi = ",Multi(a,b)) 
 
 
-'''
 
 
 # interest rate  finding
@@ -473,3 +477,72 @@ def simple_interest(p,t,r):
 
   
 print("Simple Interest: ",simple_interest(p,r,t)) 
+
+
+
+
+
+
+
+
+
+
+
+#  If Else
+
+
+
+# even odd
+
+
+n = int(input(" Enter a number to check:"))
+
+if n % 2 == 0:
+  print("this is  even number.")
+if n % 2 != 0:
+  print("this is  an odd number.")
+if n == 0:
+  print("The number is neither even nor odd. Rather you entered Zero.")
+
+
+
+# largest  number 
+
+a = int(input("Enter the Value of a: "));  
+b = int(input("Enter the Value of b: "));  
+c = int(input("Enter the Value of c: "));  
+
+if a>b and a>c:  
+    print("a is largest input.");  
+if b>a and b>c:  
+    print("b is largest input.");  
+if c>a and c>b:  
+    print("c is largest input."); 
+
+# marks check
+
+marks = int(input("Enter the marks? "))  
+
+if marks > 85 and marks <= 100:  
+   print("Congrats ! you scored grade A ...")  
+elif marks > 60 and marks <= 85:  
+   print("You scored grade B + ...")  
+elif marks > 40 and marks <= 60:  
+   print("You scored grade B ...")  
+elif (marks > 30 and marks <= 40):  
+   print("You scored grade C ...")  
+else:  
+   print("Sorry you are fail !!") 
+
+# loop in loop nested loop
+
+print("Nested Loop Checking")
+
+x = 41
+
+if x > 10:
+  print("Above ten,")
+  if x > 20:
+    print("and also above 20!")
+  else:
+    print("but not above 20.")
