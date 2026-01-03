@@ -984,3 +984,17 @@ print(datetime.now())
 print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))      
 
 
+#The Logic Challenge
+
+
+portfolio = {
+    "name": "Pratik",
+    "skills": ["DSA", "C++", "Java", "Frontend", "Python"],
+    "role": "Software Developer",
+    "experience": "Fresher"
+}
+
+
+print("My Skills:")
+for skill in portfolio["skills"]:
+    print("-", skill)
